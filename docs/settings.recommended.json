@@ -1,23 +1,24 @@
 {
-  "gchPro.addedColor": "#00A83B",
-  "gchPro.modifiedColor": "#0066FF",
-  "gchPro.deletedColor": "#E00032",
-  "gchPro.opacity": 0.24,
+  "gchPro.addedColor": "#55AA70",
+  "gchPro.modifiedColor": "#5792D0",
+  "gchPro.deletedColor": "#CE7078",
+  "gchPro.opacity": 0.15,
   "gchPro.wholeLine": true,
   "gchPro.overviewRuler": false,
   "gchPro.deletionLabels": true,
   "gchPro.autoRefresh": true,
   "gchPro.codeLens": true,
   "scm.diffDecorations": "all",
+  "editor.overviewRulerLanes": 3,
   "workbench.colorCustomizations": {
-    "editorGutter.addedBackground": "#00A83B",
-    "editorGutter.modifiedBackground": "#0066FF",
-    "editorGutter.deletedBackground": "#E00032",
-    "minimapGutter.addedBackground": "#00A83B",
-    "minimapGutter.modifiedBackground": "#0066FF",
-    "minimapGutter.deletedBackground": "#E00032",
-    "editorOverviewRuler.addedForeground": "#00000000",
-    "editorOverviewRuler.modifiedForeground": "#00000000",
-    "editorOverviewRuler.deletedForeground": "#00000000"
+    "editorGutter.addedBackground": "#55AA70",
+    "editorGutter.modifiedBackground": "#5792D0",
+    "editorGutter.deletedBackground": "#CE7078",
+    "minimapGutter.addedBackground": "#55AA70",
+    "minimapGutter.modifiedBackground": "#5792D0",
+    "minimapGutter.deletedBackground": "#CE7078",
+    "editorOverviewRuler.addedForeground": "#55AA70",
+    "editorOverviewRuler.modifiedForeground": "#5792D0",
+    "editorOverviewRuler.deletedForeground": "#CE7078"
   }
 }

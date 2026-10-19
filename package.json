@@ -2,7 +2,7 @@
   "name": "git-change-highlighter-pro",
   "displayName": "Git Change Highlighter Pro",
   "publisher": "local-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Persistent HEAD-based added, modified and deleted line highlights with hunk review.",
   "license": "MIT",
   "engines": {
@@ -27,7 +27,7 @@
   "scripts": {
     "test": "node --test test/*.test.js",
     "check": "node --check src/extension.js && node --check src/git.js && node --check src/diff.js && node --check src/scheduler.js",
-    "package": "vsce package --allow-missing-repository -o dist/git-change-highlighter-pro-1.0.1.vsix"
+    "package": "vsce package --allow-missing-repository -o dist/git-change-highlighter-pro-1.0.2.vsix"
   },
   "dependencies": {
     "diff": "8.0.4"
@@ -67,25 +67,25 @@
       "properties": {
         "gchPro.addedColor": {
           "type": "string",
-          "default": "#00A83B",
+          "default": "#55AA70",
           "pattern": "^#[0-9a-fA-F]{6}$",
           "description": "Added line color (#RRGGBB)."
         },
         "gchPro.modifiedColor": {
           "type": "string",
-          "default": "#0066FF",
+          "default": "#5792D0",
           "pattern": "^#[0-9a-fA-F]{6}$",
           "description": "Modified line color (#RRGGBB)."
         },
         "gchPro.deletedColor": {
           "type": "string",
-          "default": "#E00032",
+          "default": "#CE7078",
           "pattern": "^#[0-9a-fA-F]{6}$",
           "description": "Deleted position color (#RRGGBB)."
         },
         "gchPro.opacity": {
           "type": "number",
-          "default": 0.24,
+          "default": 0.15,
           "minimum": 0,
           "maximum": 1,
           "description": "Whole-line background opacity."

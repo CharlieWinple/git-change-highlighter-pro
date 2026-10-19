@@ -35,12 +35,12 @@ async function activate(context) {
   function getStyles(doc) {
     const key = keyOf(doc);
     if (styles.has(key)) return styles.get(key);
-    const c = config(doc.uri), defaults = { added: '#00A83B', modified: '#0066FF', deleted: '#E00032' };
+    const c = config(doc.uri), defaults = { added: '#55AA70', modified: '#5792D0', deleted: '#CE7078' };
     const types = {};
     for (const kind of Object.keys(defaults)) {
       const value = c.get(`${kind}Color`, defaults[kind]);
       const color = /^#[\da-f]{6}$/i.test(value) ? value : defaults[kind];
-      const opacity = Math.min(1, Math.max(0, Number(c.get('opacity', 0.24)) || 0));
+      const opacity = Math.min(1, Math.max(0, Number(c.get('opacity', 0.15)) || 0));
       const rgba = `rgba(${parseInt(color.slice(1, 3), 16)},${parseInt(color.slice(3, 5), 16)},${parseInt(color.slice(5, 7), 16)},${opacity})`;
       const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect x="1" y="3" width="14" height="10" rx="2" fill="${color}"/><path stroke="white" stroke-width="2" d="M4 8h8"/></svg>`;
       types[kind] = vscode.window.createTextEditorDecorationType({
