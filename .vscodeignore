@@ -1,0 +1,8 @@
+upstream/**
+test/**
+dist/**
+node_modules/**
+!node_modules/diff/**
+package-lock.json
+docs/TEST-RESULTS.txt
+.gitignore

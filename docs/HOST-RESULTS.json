@@ -1,0 +1,17 @@
+{
+  "vscode": "1.142.0",
+  "passed": [
+    "Extension activation",
+    "Open file: automatic hunk/CodeLens",
+    "Navigation",
+    "Accept dismisses hunk",
+    "Unsaved buffer refresh and content-based Accept invalidation",
+    "Same document in two visible editors",
+    "Explicit Reject: buffer restored, index untouched, no implicit save",
+    "Reject is undoable",
+    "Save and external commit refresh without manual command",
+    "autoRefresh=false and explicit manual refresh",
+    "Pure deletion: count label, empty-buffer decorations and Reject"
+  ],
+  "status": "PASS"
+}

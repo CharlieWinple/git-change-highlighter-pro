@@ -1,0 +1,23 @@
+{
+  "gchPro.addedColor": "#00A83B",
+  "gchPro.modifiedColor": "#0066FF",
+  "gchPro.deletedColor": "#E00032",
+  "gchPro.opacity": 0.24,
+  "gchPro.wholeLine": true,
+  "gchPro.overviewRuler": false,
+  "gchPro.deletionLabels": true,
+  "gchPro.autoRefresh": true,
+  "gchPro.codeLens": true,
+  "scm.diffDecorations": "all",
+  "workbench.colorCustomizations": {
+    "editorGutter.addedBackground": "#00A83B",
+    "editorGutter.modifiedBackground": "#0066FF",
+    "editorGutter.deletedBackground": "#E00032",
+    "minimapGutter.addedBackground": "#00A83B",
+    "minimapGutter.modifiedBackground": "#0066FF",
+    "minimapGutter.deletedBackground": "#E00032",
+    "editorOverviewRuler.addedForeground": "#00000000",
+    "editorOverviewRuler.modifiedForeground": "#00000000",
+    "editorOverviewRuler.deletedForeground": "#00000000"
+  }
+}

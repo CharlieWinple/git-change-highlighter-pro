@@ -1,0 +1,121 @@
+{
+  "name": "git-change-highlighter-pro",
+  "displayName": "Git Change Highlighter Pro",
+  "publisher": "local-tools",
+  "version": "1.0.1",
+  "description": "Persistent HEAD-based added, modified and deleted line highlights with hunk review.",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionDependencies": [
+    "vscode.git"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false
+    },
+    "virtualWorkspaces": false
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node --check src/extension.js && node --check src/git.js && node --check src/diff.js && node --check src/scheduler.js",
+    "package": "vsce package --allow-missing-repository -o dist/git-change-highlighter-pro-1.0.1.vsix"
+  },
+  "dependencies": {
+    "diff": "8.0.4"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "4.0.0"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "gchPro.next",
+        "title": "Git Change Highlighter Pro: Next Change"
+      },
+      {
+        "command": "gchPro.previous",
+        "title": "Git Change Highlighter Pro: Previous Change"
+      },
+      {
+        "command": "gchPro.refresh",
+        "title": "Git Change Highlighter Pro: Refresh"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "gchPro.next",
+        "key": "ctrl+alt+n",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gchPro.previous",
+        "key": "ctrl+alt+p",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Git Change Highlighter Pro",
+      "properties": {
+        "gchPro.addedColor": {
+          "type": "string",
+          "default": "#00A83B",
+          "pattern": "^#[0-9a-fA-F]{6}$",
+          "description": "Added line color (#RRGGBB)."
+        },
+        "gchPro.modifiedColor": {
+          "type": "string",
+          "default": "#0066FF",
+          "pattern": "^#[0-9a-fA-F]{6}$",
+          "description": "Modified line color (#RRGGBB)."
+        },
+        "gchPro.deletedColor": {
+          "type": "string",
+          "default": "#E00032",
+          "pattern": "^#[0-9a-fA-F]{6}$",
+          "description": "Deleted position color (#RRGGBB)."
+        },
+        "gchPro.opacity": {
+          "type": "number",
+          "default": 0.24,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Whole-line background opacity."
+        },
+        "gchPro.wholeLine": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show whole-line backgrounds."
+        },
+        "gchPro.overviewRuler": {
+          "type": "boolean",
+          "default": false,
+          "description": "Show overview ruler markers."
+        },
+        "gchPro.autoRefresh": {
+          "type": "boolean",
+          "default": true,
+          "description": "Refresh on editing, save, editor and Git changes."
+        },
+        "gchPro.codeLens": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show hunk navigation, Accept and Reject links."
+        },
+        "gchPro.deletionLabels": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show a red deleted-line count next to deletion positions."
+        }
+      }
+    }
+  }
+}

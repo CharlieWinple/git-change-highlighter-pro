@@ -1,0 +1,32 @@
+
+> git-change-highlighter-pro@1.0.0 test
+> node --test test/*.test.js
+
+✔ pure single and multiple added lines (4.2869ms)
+✔ single and multiple replacements are blue (0.6249ms)
+✔ similarity aligns inserted line before replacement in same block (0.5619ms)
+✔ context separates addition and replacement inside one hunk (0.4218ms)
+✔ pure deletions at top, middle, EOF and entire file are gaps (0.5269ms)
+✔ separate hunks keep new-side offsets after insertion (0.439ms)
+✔ no-newline markers and content starting +++/--- are not headers (0.4116ms)
+✔ empty, CRLF-only and unchanged documents (0.2256ms)
+✔ Reject reverses untouched original hunks including newline changes (0.9934ms)
+✔ Reject leaves unrelated hunks alone and refuses stale text (0.9126ms)
+✔ content identity changes even when hunk header is unchanged (0.3449ms)
+✔ bounded conservative pairing for ambiguous and large replacement blocks (0.2916ms)
+✔ large MATLAB, Python and LaTeX documents (190.4014ms)
+ℹ MATLAB: 40,000 lines, 54.3 ms
+ℹ Python: 40,000 lines, 44.3 ms
+ℹ LaTeX: 40,000 lines, 53.4 ms
+✔ binary and malformed patches fail safely (0.4018ms)
+✔ real Git: staged + unstaged, unstage, commit, rename, Unicode paths and read-only guarantees (3769.4741ms)
+✔ rapid edits invalidate in-flight results before debounce and coalesce newest result (68.9892ms)
+✔ multiple documents and close/dispose cannot publish stale work (59.1794ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3926.8716
