@@ -8,12 +8,16 @@ A lightweight VS Code extension that highlights changes against Git **HEAD**: gr
 
 ## 安装 / Installation
 
-在扩展面板菜单选择 **Install from VSIX…（从 VSIX 安装）**，选择 `dist/git-change-highlighter-pro-1.0.2.vsix`，或执行：
+下载：[最新 Release 页面](https://github.com/CharlieWinple/git-change-highlighter-pro/releases/latest) · [直接下载 v1.0.2 VSIX](https://github.com/CharlieWinple/git-change-highlighter-pro/releases/download/v1.0.2/git-change-highlighter-pro-1.0.2.vsix)。无需克隆仓库或自行构建。
 
-Choose **Install from VSIX…** in the Extensions view menu and select `dist/git-change-highlighter-pro-1.0.2.vsix`, or run:
+Downloads: [Latest Release](https://github.com/CharlieWinple/git-change-highlighter-pro/releases/latest) · [Download v1.0.2 VSIX](https://github.com/CharlieWinple/git-change-highlighter-pro/releases/download/v1.0.2/git-change-highlighter-pro-1.0.2.vsix). No repository clone or local build is required.
+
+下载后，在 VS Code 扩展面板菜单选择 **Install from VSIX…（从 VSIX 安装）**，选择下载的 `git-change-highlighter-pro-1.0.2.vsix`；也可在下载文件所在目录执行以下命令。若从源码仓库安装，文件位于 `dist/`。
+
+After downloading, choose **Install from VSIX…** in VS Code's Extensions view menu and select the downloaded `git-change-highlighter-pro-1.0.2.vsix`. Alternatively, run the command below from the download directory. In a source checkout, the package is located in `dist/`.
 
 ```powershell
-code --install-extension .\dist\git-change-highlighter-pro-1.0.2.vsix
+code --install-extension .\git-change-highlighter-pro-1.0.2.vsix
 ```
 
 扩展 ID：`local-tools.git-change-highlighter-pro`。按需执行 **Developer: Reload Window**。请禁用原 `Piyush5784.git-change-highlighter`，避免重复高亮、CodeLens 和快捷键。本地包未发布到 Marketplace。
